@@ -34,7 +34,7 @@ https://github.com/Huioqy/Docker_Start_Up
 
 https://hub.docker.com/_/mysql?tab=description
 
-     docker run --name huioqy-mysql -e MYSQL_ROOT_PASSWORD=123456789 -d mysql:8 
+     docker run --name huioqy-mysql -e MYSQL_ROOT_PASSWORD=123456789 -d mysql:8.0
 
 ## Matomo--Docker
 
