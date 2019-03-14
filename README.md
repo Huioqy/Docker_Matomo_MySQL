@@ -20,15 +20,15 @@ https://github.com/Huioqy/Docker_Start_Up
 
       docker run [OPTIONS] IMAGE [COMMAND] [ARG...] 
 
-      [OPTIONS]: -d     Run container in background and print container ID
+      [OPTIONS]: -d Run container in background and print container ID
 
-                 -e     Set environment variables
+                 -e Set environment variables
 
-                 --name	Assign a name to the container
+                 --name Assign a name to the container
 
-                 --link	Add link to another container
+                 --link Add link to another container
 
-                 -p		  Publish a container’s port(s) to the host
+                 -p Publish a container’s port(s) to the host
 
 ## MySQL--Docker
 
