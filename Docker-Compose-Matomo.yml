@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  #service name
+  app_matomo:
+    image: matomo:3.8.1
+    restart: always
+    links:
+      - db_mysql_80
+    volumes:
+      - "/home/huioqy/Code_Library/matomo_config:/var/www/html/config:rw"
+      - "/home/huioqy/Code_Library/matomo_logs:/var/www/html/logs"
+    #environment:
+      #- "VIRTUAL_HOST=CHANGE_ME"
+    ports:
+      - "4001:81"
+
