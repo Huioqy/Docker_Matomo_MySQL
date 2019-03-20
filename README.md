@@ -44,4 +44,8 @@ https://github.com/matomo-org/docker
 
 ## Docker-Compose-MySQL&Matomo
 
+edit the docker-compose.yml 
 
+    docker-compose up
+    
+    docker-compose down
