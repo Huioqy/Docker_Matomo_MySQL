@@ -39,7 +39,7 @@ services:
   webserver:
     image: 'bitnami/apache:latest'
     ports:
-      - 22:8080
+      - 443:8080
     volumes:
       - "/root/Docker_Matomo_MySQL/website/:/app"
     networks:
