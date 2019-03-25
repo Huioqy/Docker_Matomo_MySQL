@@ -29,6 +29,8 @@ https://github.com/Huioqy/Docker_Start_Up
                  --link Add link to another container
 
                  -p     Publish a container’s port(s) to the host
+         
+      docker system prune
 
 #### MySQL--Docker
 
