@@ -6,6 +6,8 @@ MySQL: 8.0
 
 Matomo: 3.8.1
 
+Apache
+
 ## Docker
 
 https://github.com/Huioqy/Docker_Start_Up
