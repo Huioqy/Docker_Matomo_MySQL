@@ -1,12 +1,14 @@
 # Docker_Matomo_MySQL
 
-Docker: 18.09.3, build 774a1f4
+Docker: 18.09.3(774a1f4) & 2.0.0.3(31259)
 
 MySQL: 8.0
 
-Matomo: 3.8.1
+Matomo: 3.9.1
 
 Apache
+
+OS: Ubuntu 16.04, MacOS 10.14.4, CentOS 7
 
 ## Docker
 
