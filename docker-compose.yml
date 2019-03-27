@@ -21,7 +21,7 @@ services:
       - webnet
       - sqlnet
 
-    
+
   #service name
   app_matomo:
     image: matomo:3.8.1
@@ -29,9 +29,9 @@ services:
     links:
       - db
     ports:
-      - "4000:80" 
+      - "4000:80"
     volumes:
-      - "/home/huioqy/NTU/Docker_Matomo_MySQL_local/matomo_config:/var/www/html/config:rw"
+      - ./matomo_config:/var/www/html/config:rw
     networks:
       - webnet
 
@@ -41,7 +41,7 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - "/home/huioqy/NTU/Docker_Matomo_MySQL_local/website/:/app"
+      - ./website/:/app
     networks:
       - webnet
 
@@ -60,5 +60,3 @@ networks:
 
 volumes:
   data_volume:
-  
-
