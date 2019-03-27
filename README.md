@@ -6,7 +6,7 @@ MySQL: 8.0
 
 Matomo: 3.9.1
 
-Apache
+Apache: https://hub.docker.com/r/bitnami/apache/
 
 OS: Ubuntu 16.04, MacOS 10.14.4, CentOS 7
 
@@ -34,6 +34,23 @@ https://github.com/Huioqy/Docker_Start_Up
 
                  -p     Publish a container’s port(s) to the host
 
+
+## Docker-Compose-MySQL&Matomo&Apache
+
+* Edit the docker-compose.yml
+
+1. Create mysql database for Matomo
+
+2. Inisitalize Matomo on http://localhost:4000/, the name of database service should be the service name of mysql database
+ (i.e., db)
+ 
+3. Start an apache server for the websites
+
+    docker-compose up
+    
+    docker-compose down
+
+
 #### MySQL--Docker
 
 https://hub.docker.com/_/mysql?tab=description
@@ -45,11 +62,3 @@ https://hub.docker.com/_/mysql?tab=description
 https://github.com/matomo-org/docker
 
     docker run -d --link huioqy-mysql:db -p 4000:80 matomo:3.8.1
-
-## Docker-Compose-MySQL&Matomo
-
-edit the docker-compose.yml 
-
-    docker-compose up
-    
-    docker-compose down
