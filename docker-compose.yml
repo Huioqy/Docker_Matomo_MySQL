@@ -16,24 +16,20 @@ services:
       # Password for root access
       MYSQL_ROOT_PASSWORD: '123456789'
     volumes:
-      - data_volume:/var/lib/mysql
-    networks:
-      - webnet
-      - sqlnet
+      - ./mysql:/var/lib/mysql
 
 
   #service name
   app_matomo:
-    image: matomo:3.8.1
+    image: matomo:latest
     restart: always
     links:
       - db
     ports:
       - "4000:80"
     volumes:
-      - ./matomo_config:/var/www/html/config:rw
-    networks:
-      - webnet
+      - ./matomo_config:/var/www/html/config
+      - ./matomo_logs:/var/www/html/logs
 
   #service name
   webserver:
@@ -42,21 +38,3 @@ services:
       - 8080:8080
     volumes:
       - ./website/:/app
-    networks:
-      - webnet
-
-  #service name
-  adminer:
-    image: adminer
-    restart: always
-    networks:
-      - sqlnet
-    ports:
-      - 8082:8080
-
-networks:
-  webnet:
-  sqlnet:
-
-volumes:
-  data_volume:
