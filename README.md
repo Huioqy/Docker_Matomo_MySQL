@@ -39,12 +39,12 @@ https://github.com/Huioqy/Docker_Start_Up
 
 * Edit the docker-compose.yml
 
-  1. Create mysql database for Matomo
+1. Create mysql database for Matomo
 
-  2. Inisitalize Matomo on http://localhost:4000/, the name of database service should be the service name of mysql database
-   (i.e., db)
+2. Inisitalize Matomo on http://localhost:4000/, the name of database service should be the service name of mysql database
+ (i.e., db)
 
-  3. Start an apache server for the websites
+3. Start an apache server for the websites
 
 
         docker-compose up
